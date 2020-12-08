@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  
+  server_1:
+    build:
+      context: "./services/server_1"
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - "./services/server_1:/app"
+
+  queue:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+
+  server_2:
+    build:
+      context: "./services/server_2"
+      dockerfile: Dockerfile
+    ports:
+      - "5004:5004"
+    volumes:
+      - "./services/server_2:/app"
+
+
