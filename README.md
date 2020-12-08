@@ -9,7 +9,9 @@ With this packaged conatiner we have two servers that accepts jobs as POST reque
  
 To get up and running, open terminal and type:
 
+```
 $ docker-compose up --build
+```
 
 This will instatiate the docker containers and startup the servers. They will remain running in the background.
 
