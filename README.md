@@ -10,7 +10,7 @@ With this packaged conatiner we have two servers that accepts jobs as POST reque
 To get up and running, open terminal and type:
 
 ```
-$ docker-compose up --build
+docker-compose up --build
 ```
 
 This will instatiate the docker containers and startup the servers. They will remain running in the background.
@@ -53,12 +53,3 @@ Now lets add some chaos, install pipenv and make:
 curl -X POST -d '{"name": "pie","action": "kpansh"}' \-H  'Content-Type: application/json' \localhost:8080/kill
 ```
 
-
-  
-
-
-
-That will send a simple POST request to the job generator, you will see this reflect in terminal where the container is running.
-
-
-"# Data_Center_Network" 
